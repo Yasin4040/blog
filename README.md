@@ -15,9 +15,15 @@
 - 查看
 	- [根据ID查看文章](#look)
 	- [可进入修改文章] (#edit)
+
+- 1.views 进入网页中，根据输入的网址
+- 2.触发Router路由器，
+- 3.启动Controller的方法
+- 4.Controller方法有调用Model和数据库层数据，
+- 5.数值返回给Controller，
+- 6.由Controller，给特定网页，传送数据渲染页面进入地址，完成显示
 - View
-- 首页->我的博客url localhost:8080/article/home
-- controller  
+- controller  
 - 路由器通过获得的URL地址  - [router.go]  (#router)   router.GET("/article/home", GetAll)
 - 获得方法GetAll() 
 - func GetAll(c *gin.Context) {
@@ -46,14 +52,6 @@
 -	}
 -	return article
 -}  
-
-
-   
-
-
-
-
-
 -router.go 内容
 
 -package routers
