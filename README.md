@@ -1,15 +1,11 @@
 # blog
-simple
-# blog
 - 首页
 	- [我的博客首页]
 - 查看
         - [显示所有文章]](#all_list)
 
 - 添加  
-         - [添加文章]](#add)
-
-	
+         - [添加文章]](#add)  
 - 搜索
 	- [根据输入的内容搜索](#search_list)
 	
@@ -20,12 +16,12 @@ simple
 	- [根据ID查看文章](#look)
 	- [可进入修改文章] (#edit)
 - View
-首页->我的博客url localhost:8080/article/home
+- 首页->我的博客url localhost:8080/article/home
 - controller  
 - 路由器通过获得的URL地址  - [router.go]  (#router)   router.GET("/article/home", GetAll)
 - 获得方法GetAll() 
 - func GetAll(c *gin.Context) {
--	// var articles []Article
+-	// var articles []Article  
 -
 -	articles := GetAllArticle()
 -	c.HTML(http.StatusOK, "home.html", gin.H{
@@ -35,7 +31,9 @@ simple
 -
 -}
 -调用moldels的getAllArticle方法获取，数据库中Article数据，由C.html渲染页面并传送数据，完成首页的查看所有文章
--Moldels
+-Moldels  
+
+
 -调用models.GetAllArticle()
 
 -func GetAllArticle() (article []*Article) {
@@ -47,7 +45,8 @@ simple
 -		return nil
 -	}
 -	return article
--}
+-}  
+
 
    
 
@@ -81,11 +80,6 @@ simple
 -	return router
 - }
 	
-
-
-
-
-- 拼接参数：
 - Article 表
 
 - type Article struct {
